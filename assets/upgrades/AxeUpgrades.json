@@ -1,0 +1,198 @@
+[
+	{
+    	"type":"Stat",
+    	"parameters":{
+    		"id": 1,
+    		"price":100,
+    		"skillPointCost":1,
+    		"name":"Paul Bunyan",
+    		"info": "Become the biggest and baddest swinger around. Increases your damage by 100",
+        	"axeStatChanges": [
+        		{ "name": "attackDamage", "amount": 5 }
+        	]
+    	}
+	},
+	{
+		"type": "Frenzy",
+		"parameters":{
+			"id": 2,
+			"price":100,
+    		"skillPointCost":1,
+    		"name":"Ragnarockin",
+    		"info":"Increases axe size",
+    		"cooldown":5000,
+    		"originalActivationButton":70
+		}
+	},
+	{
+		"type": "ThrowingAxe",
+		"parameters":{
+			"id": 3,
+			"price":350,
+			"skillPointCost":2,
+			"name":"Throwing Axe",
+			"info":"Turns melee attack into ranged",
+			"cooldown":3000,
+			"originalActivationButton":88
+		}
+	},
+	{
+		"type": "FlamingAxe",
+		"parameters":{
+			"id": 4,
+			"price":200,
+			"skillPointCost":3,
+			"name":"Flaming Axe",
+			"info":"Axe catches fire, causing damage over time",
+			"DOTDamagePerSecond":2.5,
+			"DOTLength":2000,
+			"cooldown":5000,
+			"originalActivationButton":81
+		}
+	},
+	{
+		"type": "LifestealAxe",
+		"parameters":{
+			"id": 5,
+			"price":400,
+			"skillPointCost":3,
+			"name":"Lifesteal Axe",
+			"info":"Grants the ability to drain life from an enemy and add it to your health",
+			"cooldown":5000,
+			"originalActivationButton":90
+		}
+	},
+	{
+		"type": "Invincibility",
+		"parameters":{
+			"id": 6,
+			"price":250,
+    		"skillPointCost":4,
+    		"name":"Invincibility",
+    		"info":"Become invincible for 1.5 seconds",
+    		"cooldown":6000,
+    		"originalActivationButton":82
+		}
+	},
+	{
+		"type": "Meditation",
+		"parameters":{
+			"id": 7,
+			"price":250,
+			"skillPointCost":10,
+			"name":"Meditation",
+			"info":"Heal for 5 seconds",
+			"cooldown":60000,
+			"originalActivationButton":84
+		}
+	},
+	{
+		"type": "Stat",
+		"parameters":{
+			"id": 8,
+			"price":200,
+			"skillPointCost":2,
+			"name":"Speed Boost",
+			"info":"Increases Speed by 200",
+			"playerStatChanges": [
+				{"name": "speed", "amount": 400 }
+			]
+		}
+	},
+	{
+		"type": "Stat",
+		"parameters":{
+			"id": 9,
+			"price":200,
+			"skillPointCost":3,
+			"name":"Cutting Boost",
+			"info":"Increases tree cutting speed, but slows down regular attack speed",
+			"axeStatChanges": [
+				{"name": "treeCuttingSpeed", "amount": 0.03},
+				{"name": "swingSpeed", "amount": 150 }	
+			]
+		}
+	},
+	{
+		"type": "Stat",
+		"parameters":{
+			"id": 10,
+			"price":200,
+			"skillPointCost":3,
+			"name":"Swing Speed Boost",
+			"info":"Increases swing speed, but slows down tree cutting speed",
+			"axeStatChanges": [
+				{"name": "swingSpeed", "amount": -50},
+				{"name": "returnSpeed", "amount": -100},
+				{"name": "treeCuttingSpeed", "amount": -0.03}
+			]
+		}
+	},
+	{
+		"type": "SelfDestruct",
+		"parameters":{
+			"id": 11,
+			"price":250,
+			"skillPointCost":4,
+			"name":"Self Destruct",
+			"info":"Heal for 5 seconds",
+			"cooldown":10000,
+			"originalActivationButton":80,
+			"explosionRadius":300
+		}
+	},
+	{
+		"type": "Stat",
+		"parameters":{
+			"id": 12,
+			"price":200,
+			"skillPointCost":3,
+			"name":"Not Balsa Wood",
+			"info":"Increases durability by 5",
+			"axeStatChanges": [
+				{"name": "maxDurability", "amount": 5}, 
+				{"name": "durability", "amount": 5}
+			]
+		}
+	},
+	{
+	"type": "Stat",
+		"parameters":{
+			"id": 13,
+			"price":400,
+			"skillPointCost":6,
+			"name":"Forged In Fire",
+			"info":"Increases durability by 10",
+			"axeStatChanges": [
+				{"name": "maxDurability", "amount": 10}, 
+				{"name": "durability", "amount": 10}
+			]
+		}
+	},
+	{
+		"type": "Stat",
+		"parameters":{
+			"id": 14,
+			"price":200,
+			"skillPointCost":3,
+			"name":"Stamina Boost",
+			"info":"Increases stamina regen by 5",
+			"playerStatChanges": [
+				{"name": "staminaRegen", "amount": 5}
+			]
+		}
+	},
+	{
+		"type": "Block",
+		"parameters":{
+			"id": 15,
+			"price":250,
+			"skillPointCost":4,
+			"name":"Block",
+			"info":"Block projectiles",
+			"cooldown": 1000,
+			"originalActivationButton":69
+
+		}
+	}
+]

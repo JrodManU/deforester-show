@@ -1,0 +1,55 @@
+TO CREATE ADDONS
+	Required functions:
+		NameOfAddon(parameters) Yes, the parameter is named parameters.
+		applyUpgrade(axePreset)
+		applyUpgradeAtRuntime(playerAxe)
+
+TO USE ADDONS
+	All Addons
+		add this as the first line in the constructor of your upgrade
+			this.addons = [ArrayOf, AddonsYou, WantToUse];
+	
+	CooldownAddon
+		Required parameters:
+			cooldown (measured in milliseconds)
+		Purpose:
+			This addon automatically adds a cooldown to the cooldown manager
+		Required action:
+			Add this at the top of your applyUpgradeAtRuntime function
+				CooldownAddon.prototype.applyUpgradeAtRuntime.call(this, playerAxe);
+			Add this between when you Object.create(AxeUpgrade.prototype) and when you reset the constructor
+				Object.assign(NameOfTheFile.prototype, CooldownAddon.prototype);
+			You must still start the cooldown and check if the cooldown is finished
+			Relevant lines of code:
+				this.cooldownManager.startCooldown(upgradeContext.id); 
+				this.cooldownManager.cooldownFinished(upgradeContext.id); True/False (True means that the ability is ready to be used again)
+	
+	UpdateAddon
+		Required functions:
+			axeUpdateAddition
+				This function is simply combined with the existing update function on the axe
+				Think of it like:
+					function a() {} old update
+					function b() {} update addition
+					function c() { a(); b(); } new update
+		Purpose:
+			Allows usage of upgrades that need an update loop
+		Required action:
+			Add this at the top of your applyUpgradeAtRuntime function
+				UpdateAddon.prototype.applyUpgradeAtRuntime.call(this, playerAxe);
+			Add this between when you Object.create(AxeUpgrade.prototype) and when you reset the constructor
+				Object.assign(NameOfTheFile.prototype, UpdateAddon.prototype);
+				
+	ButtonActivatedAddon
+		Required parameters:
+			activationButton (ascii decimal of the desired button)
+		Purpose:
+			allow to create an upgrade that is activated by a button
+		Required action:
+			In the constructor
+				ButtonActivatedAddon.call(this, game, parameters);
+			Add this between when you Object.create(AxeUpgrade.prototype) and when you reset the constructor
+				Object.assign(NameOfTheFile.prototype, ButtonActivatedAddon.prototype);
+			Add to the BOTTOM of the applyUpgradeAtRuntime
+				ButtonActivatedAddon.prototype.applyUpgradeAtRuntime.call(this, playerAxe, functionToBeCalledOnButonPress);
+		

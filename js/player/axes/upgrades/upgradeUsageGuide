@@ -1,0 +1,46 @@
+REQUIRED ACTION IN JSON
+	(its in assets)
+	Required format:
+		{
+	    	"type":"NameOfJSFile",
+	    	"parameters":{
+	    		"id": 1, These increment by 1, use your brain and follow accordingly
+	    		"price":100, The amount of gold this upgrade will add to the axe
+	    		"skillPointCost":1, The amount of skillpoints this upgrade costs to unlock
+	    		"name":"Paul Bunyan", The name of the upgrade (Doesn't have to be the file name)
+	    		"info": "Become the biggest and baddest swinger around. Increases your damage by 100", Description of the upgrade
+	    		
+	    		Any other parameters that are used by addons or by the upgrade should be added here
+	    		"damageIncrease":100 this is an example, don't add it to every upgrade lol
+	    	}
+		},
+		
+REQUIRED IMAGE
+	64x64 png
+	located in assets/upgrades
+	name of file is name of upgrade
+	
+REQUIRED ACTION IN AxeUpgradeManager.js
+	add the NAME_OF_THE_FILE: "NameOfTheFile" to the upgradesEnum (NameOfTheFile is also the type if you have been paying attention)
+	add a case statement for the type of upgrade
+	***this is not required if you are not creating a new type of upgrade***
+	
+REQUIRED ACTION IN THE UPGRADE FILE (that you are creating)
+	Just copy and paste this skeleton
+	/*****************************************************\
+		function NameOfTheFile(game, parameters) {
+			AxeUpgrade.call(this, game, parameters);
+		}
+		
+		NameOfTheFile.prototype = Object.create(AxeUpgrade.prototype);
+		NameOfTheFile.prototype.constructor = NameOfTheFile;
+		
+		NameOfTheFile.prototype.applyUpgrade = function(axePreset) {
+			
+		}
+		
+		NameOfTheFile.prototype.applyUpgradeAtRuntime = function(playerAxe) {
+			
+		}
+	\*****************************************************/
+	You don't have to have both apply upgrades if you don't need them
