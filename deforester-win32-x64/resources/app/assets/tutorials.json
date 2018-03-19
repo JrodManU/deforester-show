@@ -1,0 +1,106 @@
+[
+	{
+		"id": 1,
+		"name": "Basic",
+		"tutorialPrompts": [
+			{
+				"title": "HUD",
+				"body": "Red Bar: HP, Yellow Bar: Stamina, Black Bar: Durability, Blue Bar: EXP"
+			},
+			{
+				"title": "Walk",
+				"body": "A:Left D:Right"
+			},
+			{
+				"title": "Jump",
+				"body": "Press Spacebar"
+			},
+			{
+				"title": "Attack",
+				"body": "Press J"
+			},
+			{
+				"title": "Kill An Enemy",
+				"body": "Enemies drop experience"
+			},
+			{
+				"title": "Chop Down Trees",
+				"body": "Hold down L when facing trees"
+			},
+			{
+				"title": "Tree Drops",
+				"body": "Trees drop money, and health"
+			},
+			{
+				"title": "Be Careful",
+				"body": "The more trees you chop, the faster your health goes down"
+			},
+			{
+				"title": "Back To Ship",
+				"body": "Press B to teleport back to the ship"
+			},
+			{
+				"title": "Don't Die",
+				"body": "Collect Money, and advance onto harder planets"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Upgrades",
+		"tutorialPrompts": [
+			{
+				"title": "Skills",
+				"body": "Skills can be unlocked to enhance your gameplay"
+			},
+			{
+				"title": "Unlocked Vs Selected",
+				"body": "Once a skill is unlocked, it is not applied to the axe. You must select a skill to add it"
+			},
+			{
+				"title": "Presets",
+				"body": "Six presets can be edited to have different skills on them"
+			},
+			{
+				"title": "Switching Axes",
+				"body": "Press 1-6, on a planet, to change between axes when they break, or when you feel like it"
+			},
+			{
+				"title": "Buying Axes",
+				"body": "The more skills you have on an axe, the higher the price it is to buy"
+			},
+			{
+				"title": "Choosing Skills",
+				"body": "Choose axe skills based on the situation"
+			}, 
+			{
+				"title": "Skill Points",
+				"body": "SKills cost points, that are gained by leveling up"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Quests",
+		"tutorialPrompts": [
+			{
+				"title": "Quests",
+				"body": "View your spoils of war here!"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Ship",
+		"tutorialPrompts": [
+			{
+				"title": "Ship Menu",
+				"body": "Here you can choose what planet to invade"
+			},
+			{
+				"title": "Other Options",
+				"body": "You can access keybinds, axe presets, save the game, or return to the start menu"
+			}
+		]
+	}
+]

@@ -1,0 +1,134 @@
+[
+	{
+		"id": 1,
+		"name": "First blood",
+		"requiredQuests": [],
+		"questItemsParams": [
+			{
+				"itemName": "kills",
+				"itemGoalAmount": 1
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Second strike",
+		"requiredQuests": [1],
+		"questItemsParams": [
+			{
+				"itemName": "kills",
+				"itemGoalAmount": 2
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Pocket Change",
+		"requiredQuests": [],
+		"questItemsParams": [
+			{
+				"itemName": "gold",
+				"itemGoalAmount": 100
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "How Grand!",
+		"requiredQuests": [3],
+		"questItemsParams": [
+			{
+				"itemName": "gold",
+				"itemGoalAmount": 1000
+			}
+		]
+	},
+	{
+		"id": 5,
+		"name": "Four Zeroes",
+		"requiredQuests": [4],
+		"questItemsParams": [
+			{
+				"itemName": "gold",
+				"itemGoalAmount": 10000
+			}
+		]
+	},
+	{
+		"id": 6,
+		"name": "Dola Dola Billz",
+		"requiredQuests": [5],
+		"questItemsParams": [
+			{
+				"itemName": "gold",
+				"itemGoalAmount": 50000
+			}
+		]
+	},
+	{
+		"id": 7,
+		"name": "A Baker's Dozen",
+		"requiredQuests": [2],
+		"questItemsParams": [
+			{
+				"itemName": "kills",
+				"itemGoalAmount": 13
+			}
+		]
+	},
+	{
+		"id": 8,
+		"name": "Too Much Fun",
+		"requiredQuests": [7],
+		"questItemsParams": [
+			{
+				"itemName": "kills",
+				"itemGoalAmount": 100
+			}
+		]
+	},
+	{
+		"id": 9,
+		"name": "This is SPARTA",
+		"requiredQuests": [8],
+		"questItemsParams": [
+			{
+				"itemName": "kills",
+				"itemGoalAmount": 300
+			}
+		]
+	},
+	{
+		"id": 10,
+		"name": "Level Up!",
+		"requiredQuests": [],
+		"questItemsParams": [
+			{
+				"itemName": "levels",
+				"itemGoalAmount": 1
+			}
+		]
+	},
+	{
+		"id": 11,
+		"name": "Happy 10th",
+		"requiredQuests": [10],
+		"questItemsParams": [
+			{
+				"itemName": "levels",
+				"itemGoalAmount": 9
+			}
+		]
+	},
+	{
+		"id": 12,
+		"name": "No Life",
+		"requiredQuests": [11],
+		"questItemsParams": [
+			{
+				"itemName": "levels",
+				"itemGoalAmount": 99
+			}
+		]
+	}
+]
